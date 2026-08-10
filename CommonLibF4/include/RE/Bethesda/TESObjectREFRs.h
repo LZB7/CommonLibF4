@@ -874,7 +874,7 @@ namespace RE
 		void RemoveKeyword(BGSKeyword* kwd)
 		{
 			using func_t = decltype(&TESObjectREFR::RemoveKeyword);
-			static REL::Relocation<func_t> func{ REL::ID(281170) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(281170, 2200861) };
 			return func(this, kwd);
 		}
 
