@@ -189,7 +189,7 @@ namespace RE
 		bool SetGraphVariableBool(const BSFixedString& a_variable, bool a_var)
 		{
 			using func_t = decltype(&IAnimationGraphManagerHolder::SetGraphVariableBool);
-			static REL::Relocation<func_t> func{ REL::ID(1437197) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(1437197, 2214543) };
 			return func(this, a_variable, a_var);
 		};
 
@@ -885,11 +885,11 @@ namespace RE
 			return func(this, a_point);
 		}
 
-		void SetLinkedRef(Actor* a_actor, BGSKeyword* a_keyword)
+		void SetLinkedRef(const TESObjectREFR* a_refr, BGSKeyword* a_keyword)
 		{
 			using func_t = decltype(&TESObjectREFR::SetLinkedRef);
 			static REL::Relocation<func_t> func{ REL::ID(192840) };
-			return func(this, a_actor, a_keyword);
+			return func(this, a_refr, a_keyword);
 		}
 
 		void SetLocationOnReference(const NiPoint3& a_point)
