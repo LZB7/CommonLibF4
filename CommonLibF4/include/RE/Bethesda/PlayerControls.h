@@ -56,7 +56,7 @@ namespace RE
 			};  //00
 		};
 
-		virtual ~ActionInput();  // 00
+		virtual ~ActionInput() = default;  // 00
 
 		// members
 		NiPointer<TESObjectREFR>                    ref;         // 08
