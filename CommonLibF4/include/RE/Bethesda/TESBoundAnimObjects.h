@@ -520,6 +520,13 @@ namespace RE
 
 		[[nodiscard]] bool UsingAlternateHeadPartList() const;
 
+		float GetHeight(TESObjectREFR* a_refr, TESRace* a_race)
+		{
+			using func_t = decltype(&TESNPC::GetHeight);
+			static REL::Relocation<func_t> func{ REL::RelocationID(674794, 2207473) };
+			return func(this, a_refr, a_race);
+		}
+
 		float GetFacialBoneMorphIntensity()
 		{
 			using func_t = decltype(&TESNPC::GetFacialBoneMorphIntensity);

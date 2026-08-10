@@ -543,6 +543,20 @@ namespace RE
 			return func(this);
 		}
 
+		void ClearCurrentPackage(Actor* a_actor)
+		{
+			using func_t = decltype(&AIProcess::ClearCurrentPackage);
+			static REL::Relocation<func_t> func{ REL::RelocationID(241540, 2231582) };
+			return func(this, a_actor);
+		}
+
+		void ClearCurrentDataForProcess(Actor* a_actor)
+		{
+			using func_t = decltype(&AIProcess::ClearCurrentDataForProcess);
+			static REL::Relocation<func_t> func{ REL::RelocationID(577581, 2232435) };
+			return func(this, a_actor);
+		}
+
 		bool IsWeaponSubgraphFinishedLoading(const Actor& a_actor)
 		{
 			using func_t = decltype(&AIProcess::IsWeaponSubgraphFinishedLoading);
@@ -607,7 +621,7 @@ namespace RE
 		bool SetupSpecialIdle(Actor& a_actor, RE::DEFAULT_OBJECT a_defaultObject, TESIdleForm* a_idle, bool a_testConditions, TESObjectREFR* a_targetOverride)
 		{
 			using func_t = decltype(&AIProcess::SetupSpecialIdle);
-			static REL::Relocation<func_t> func{ REL::ID(1446774) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(1446774, 2231704) };
 			return func(this, a_actor, a_defaultObject, a_idle, a_testConditions, a_targetOverride);
 		}
 
@@ -1148,6 +1162,13 @@ namespace RE
 		}
 
 		[[nodiscard]] TESNPC* GetNPC() const noexcept;
+
+		void EvaluatePackage(bool a_isCommand, bool a_resetAI)
+		{
+			using func_t = decltype(&Actor::EvaluatePackage);
+			static REL::Relocation<func_t> func{ REL::RelocationID(1395257, 2229805) };
+			return func(this, a_isCommand, a_resetAI);
+		}
 
 		bool GetOfferBarter()
 		{
