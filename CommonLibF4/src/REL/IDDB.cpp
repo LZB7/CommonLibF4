@@ -131,10 +131,8 @@ namespace REL
 		bool failed = false;
 		if (it == _id2offset.end()) {
 			failed = true;
-		} else if FALLOUT_REL_VR_CONSTEXPR (Module::IsVR()) {
-			if (it->id != a_id) {
-				failed = true;
-			}
+		} else if (it->id != a_id) {
+			failed = true;
 		}
 		if (failed) {
 			const auto version = Module::get().version();
