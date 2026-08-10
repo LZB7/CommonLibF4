@@ -4,6 +4,13 @@ namespace RE
 {
 	namespace SendHUDMessage
 	{
+		inline void ClearMessages()
+		{
+			using func_t = void();
+			static REL::Relocation<func_t> func{ REL::RelocationID(973227, 2222460) };
+			func();
+		}
+
 		inline void PopHUDMode(const HUDModeType& a_hudMode)
 		{
 			using func_t = decltype(&SendHUDMessage::PopHUDMode);
