@@ -66,7 +66,13 @@ namespace RE
 			return func(a_furniture, a_force3DUpdate, a_tempItemToAdd, a_hideCore);
 		}
 
-		inline REL::Relocation<SettingT<GameSettingCollection>*> fNewBatteryCapacity{ REL::ID(1134204) };
+		[[nodiscard]] inline SettingT<GameSettingCollection>* GetNewBatteryCapacity()
+		{
+			// Lazy by design: this deferred subsystem must not resolve an unused
+			// engine global during DLL initialization.
+			static REL::Relocation<SettingT<GameSettingCollection>*> value{ REL::ID(1134204) };
+			return value.get();
+		}
 	}
 
 	class __declspec(novtable) PowerArmorGeometry :

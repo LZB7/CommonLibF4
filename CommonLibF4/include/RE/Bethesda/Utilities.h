@@ -46,7 +46,13 @@ namespace RE
 			return func(a_projectilePos, a_projectileVelocity, a_projectileGravity, a_targetPos, a_heading, a_trajectoryPos);
 		}
 
-		static REL::Relocation<float> fWorldGravity{ REL::ID(1378547) };
+		[[nodiscard]] inline float GetWorldGravity()
+		{
+			// The old single-ID global was eagerly resolved during DLL startup.
+			// 1.11.221 uses exact supplied-library ID 2700340.
+			static REL::Relocation<float> value{ REL::RelocationID(1378547, 2700340) };
+			return value.get();
+		}
 	};
 
 	namespace AnimationSystemUtils

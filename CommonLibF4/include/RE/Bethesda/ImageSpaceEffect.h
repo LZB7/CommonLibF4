@@ -117,7 +117,11 @@ namespace RE
 		virtual bool IsActive() override;                                                           // 08
 		virtual bool UpdateParams(ImageSpaceEffectParam* a_param) override;                         // 09
 
-		inline static REL::Relocation<bool*> bDisable{ REL::RelocationID(372489, 2713225) };
+		[[nodiscard]] static bool* GetDisable()
+		{
+			static REL::Relocation<bool*> value{ REL::RelocationID(372489, 2713225) };
+			return value.get();
+		}
 
 		// members
 		ImageSpaceTexture buffer[3];  // B0
@@ -141,7 +145,11 @@ namespace RE
 		virtual bool IsActive() override;                                                           // 08
 		virtual bool UpdateParams(ImageSpaceEffectParam* a_param) override;                         // 09
 
-		inline static REL::Relocation<bool*> bDisable{ REL::RelocationID(1523708, 2713237) };
+		[[nodiscard]] static bool* GetDisable()
+		{
+			static REL::Relocation<bool*> value{ REL::RelocationID(1523708, 2713237) };
+			return value.get();
+		}
 
 		// members
 		float*            data;       // B0
@@ -179,7 +187,11 @@ namespace RE
 		virtual void ReturnTextures() override;                                                     // 06
 		virtual bool UpdateParams(ImageSpaceEffectParam* a_param) override;                         // 09
 
-		inline static REL::Relocation<bool*> bPowerArmorPipboy{ REL::ID(1065542) };
+		[[nodiscard]] static bool* GetPowerArmorPipboy()
+		{
+			static REL::Relocation<bool*> value{ REL::RelocationID(1065542, 2713203) };
+			return value.get();
+		}
 
 		// members
 		NiPointer<NiTexture> scanlineTexture;  // B0
@@ -201,7 +213,11 @@ namespace RE
 		virtual bool IsActive() override;                                                           // 08
 		virtual bool UpdateParams(ImageSpaceEffectParam* a_param) override;                         // 09
 
-		inline static REL::Relocation<bool*> bDisable{ REL::RelocationID(1500590, 2713225) };
+		[[nodiscard]] static bool* GetDisable()
+		{
+			static REL::Relocation<bool*> value{ REL::RelocationID(1500590, 2713225) };
+			return value.get();
+		}
 	};
 	static_assert(sizeof(ImageSpaceEffectRadialBlur) == 0xB0);
 
@@ -220,7 +236,11 @@ namespace RE
 		virtual bool IsActive() override;                                                           // 08
 		virtual bool UpdateParams(ImageSpaceEffectParam* a_param) override;                         // 09
 
-		inline static REL::Relocation<std::uint32_t*> MaskS{ REL::ID(775377) };
+		[[nodiscard]] static std::uint32_t* GetMaskS()
+		{
+			static REL::Relocation<std::uint32_t*> value{ REL::RelocationID(775377, 2713052) };
+			return value.get();
+		}
 
 		// members
 		float previousInvTexSizeX;         // B0
