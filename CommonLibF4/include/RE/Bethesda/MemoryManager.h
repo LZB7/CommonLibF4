@@ -197,7 +197,7 @@ namespace RE
 		[[nodiscard]] static MemoryManager& GetSingleton()
 		{
 			using func_t = decltype(&MemoryManager::GetSingleton);
-			const REL::Relocation<func_t> func{ REL::RelocationID(343176, 2193197) };
+			const REL::Relocation<func_t> func{ REL::RelocationID(343176, 4471522) };
 			return func();
 		}
 

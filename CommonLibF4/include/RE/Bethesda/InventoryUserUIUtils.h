@@ -77,7 +77,7 @@ namespace RE
 		inline void PlayMenuSound(const char* a_soundName)
 		{
 			using func_t = decltype(&PlayMenuSound);
-			static REL::Relocation<func_t> func{ REL::ID(1227993) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(1227993, 2249707) };
 			return func(a_soundName);
 		}
 	}

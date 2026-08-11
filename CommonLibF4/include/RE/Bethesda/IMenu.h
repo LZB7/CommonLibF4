@@ -244,7 +244,7 @@ namespace RE
 		bool ShouldHandleEvent(const InputEvent* a_event) override  // 01
 		{
 			using func_t = decltype(&IMenu::ShouldHandleEvent);
-			static REL::Relocation<func_t> func{ REL::ID(1241790) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(1241790, 2287392) };
 			return func(this, a_event);
 		}
 
@@ -296,7 +296,7 @@ namespace RE
 		virtual bool PassesRenderConditionText(MENU_RENDER_CONTEXT a_reason, const BSFixedString& a_customRendererName) const  // 07
 		{
 			using func_t = decltype(&IMenu::PassesRenderConditionText);
-			static REL::Relocation<func_t> func{ REL::ID(937304) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(937304, 2287379) };
 			return func(this, a_reason, a_customRendererName);
 		}
 
@@ -348,7 +348,7 @@ namespace RE
 		void OnSetSafeRect()
 		{
 			using func_t = decltype(&IMenu::OnSetSafeRect);
-			static REL::Relocation<func_t> func{ REL::ID(964859) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(964859, 2287375) };
 			return func(this);
 		}
 
@@ -357,14 +357,14 @@ namespace RE
 		UI_MESSAGE_RESULTS ProcessScaleformEvent(Scaleform::GFx::Movie* a_movie, const IUIMessageData* a_data)
 		{
 			using func_t = decltype(&IMenu::ProcessScaleformEvent);
-			static REL::Relocation<func_t> func{ REL::ID(150211) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(150211, 2287395) };
 			return func(this, a_movie, a_data);
 		}
 
 		void RefreshPlatform()
 		{
 			using func_t = decltype(&IMenu::RefreshPlatform);
-			static REL::Relocation<func_t> func{ REL::ID(1071829) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(1071829, 2287374) };
 			return func(this);
 		}
 
@@ -496,7 +496,7 @@ namespace RE
 		Scaleform::GFx::Value* AcquireFlashObjectByPath(const Scaleform::GFx::Movie& a_parentMovie, const char* a_absolutePathToMember)
 		{
 			using func_t = decltype(&BSGFxObject::AcquireFlashObjectByPath);
-			static REL::Relocation<func_t> func{ REL::ID(1065592) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(1065592, 2287015) };
 			return func(this, a_parentMovie, a_absolutePathToMember);
 		}
 	};
@@ -615,7 +615,7 @@ namespace RE
 		virtual BSEventNotifyControl ProcessEvent(const ApplyColorUpdateEvent& a_event, BSTEventSource<ApplyColorUpdateEvent>* a_source) override  // 01
 		{
 			using func_t = decltype(&BSGFxShaderFXTarget::ProcessEvent);
-			static REL::Relocation<func_t> func{ REL::ID(848563) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(848563, 2287033) };
 			return func(this, a_event, a_source);
 		}
 
@@ -720,14 +720,14 @@ namespace RE
 		virtual void SetIsTopButtonBar(bool a_isTopButtonBar) override  // 08
 		{
 			using func_t = decltype(&GameMenuBase::SetIsTopButtonBar);
-			static REL::Relocation<func_t> func{ REL::ID(1367353) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(1367353, 2223204) };
 			return func(this, a_isTopButtonBar);
 		}
 
 		virtual void OnMenuDisplayStateChanged() override  // 0A
 		{
 			using func_t = decltype(&GameMenuBase::OnMenuDisplayStateChanged);
-			static REL::Relocation<func_t> func{ REL::ID(1274450) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(1274450, 2223205) };
 			return func(this);
 		}
 
@@ -750,21 +750,21 @@ namespace RE
 		virtual bool CacheShaderFXQuadsForRenderer_Impl() override  // 10
 		{
 			using func_t = decltype(&GameMenuBase::CacheShaderFXQuadsForRenderer_Impl);
-			static REL::Relocation<func_t> func{ REL::ID(863029) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(863029, 2223200) };
 			return func(this);
 		}
 
 		virtual void TransferCachedShaderFXQuadsForRenderer(const BSFixedString& a_rendererName) override  // 11
 		{
 			using func_t = decltype(&GameMenuBase::TransferCachedShaderFXQuadsForRenderer);
-			static REL::Relocation<func_t> func{ REL::ID(65166) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(65166, 2223201) };
 			return func(this, a_rendererName);
 		}
 
 		virtual void SetViewportRect(const NiRect<float>& a_viewportRect) override  // 12
 		{
 			using func_t = decltype(&GameMenuBase::SetViewportRect);
-			static REL::Relocation<func_t> func{ REL::ID(1554334) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(1554334, 2223202) };
 			return func(this, a_viewportRect);
 		}
 
@@ -772,7 +772,7 @@ namespace RE
 		virtual void AppendShaderFXInfos(BSTAlignedArray<UIShaderFXInfo>& a_colorFXInfos, BSTAlignedArray<UIShaderFXInfo>& a_backgroundFXInfos) const  // 13
 		{
 			using func_t = decltype(&GameMenuBase::AppendShaderFXInfos);
-			static REL::Relocation<func_t> func{ REL::ID(583584) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(583584, 2223203) };
 			return func(this, a_colorFXInfos, a_backgroundFXInfos);
 		}
 
