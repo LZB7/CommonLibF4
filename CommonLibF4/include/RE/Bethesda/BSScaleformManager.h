@@ -85,7 +85,7 @@ namespace RE
 
 		[[nodiscard]] static BSScaleformManager* GetSingleton()
 		{
-			static REL::Relocation<BSScaleformManager**> singleton{ REL::ID(106578) };
+			static REL::Relocation<BSScaleformManager**> singleton{ REL::RelocationID(106578, 4796889) };
 			return *singleton;
 		}
 
@@ -98,7 +98,7 @@ namespace RE
 			float                                  a_backgroundAlpha = 0.0F)
 		{
 			using func_t = decltype(&BSScaleformManager::LoadMovie);
-			static REL::Relocation<func_t> func{ REL::ID(1526234) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(1526234, 2287422) };
 			return func(this, a_menu, a_movie, a_menuName, a_menuObjPath, a_scaleMode, a_backgroundAlpha);
 		}
 
@@ -120,14 +120,14 @@ namespace RE
 		[[nodiscard]] bool GetMovieFilename(char const* a_menuName, BSStaticStringT<260>& a_filePath)
 		{
 			using func_t = decltype(&BSScaleformManager::GetMovieFilename);
-			static REL::Relocation<func_t> func{ REL::ID(1191277) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(1191277, 2287428) };
 			return func(this, a_menuName, a_filePath);
 		}
 
 		void InitMovieViewport(Scaleform::GFx::Movie& a_movie, const float a_dynamicWidthRatio, const float a_dynamicHeightRatio)
 		{
 			using func_t = decltype(&BSScaleformManager::InitMovieViewport);
-			static REL::Relocation<func_t> func{ REL::ID(206895) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(206895, 4494254) };
 			return func(this, a_movie, a_dynamicWidthRatio, a_dynamicHeightRatio);
 		}
 	};

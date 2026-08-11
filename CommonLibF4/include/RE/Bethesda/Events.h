@@ -125,7 +125,7 @@ namespace RE
 	public:
 		[[nodiscard]] static EventSource_t* GetEventSource()
 		{
-			static REL::Relocation<EventSource_t**> singleton{ REL::ID(421543) };
+			static REL::Relocation<EventSource_t**> singleton{ REL::RelocationID(421543, 2707340) };
 			if (!*singleton) {
 				*singleton = new EventSource_t(&BSTGlobalEvent::GetSingleton()->eventSourceSDMKiller);
 			}
@@ -266,7 +266,9 @@ namespace RE
 	public:
 		[[nodiscard]] static EventSource_t* GetEventSource()
 		{
-			static REL::Relocation<EventSource_t**> singleton{ REL::ID(683142) };
+			// 1.11.221 exact ID/RVA: 4801988 / 0x3269880. The prior
+			// single ID is the 1.10.163 event-source storage.
+			static REL::Relocation<EventSource_t**> singleton{ REL::RelocationID(683142, 4801988) };
 			if (!*singleton) {
 				*singleton = new EventSource_t(&BSTGlobalEvent::GetSingleton()->eventSourceSDMKiller);
 			}

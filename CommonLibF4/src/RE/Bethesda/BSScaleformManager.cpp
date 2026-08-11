@@ -15,7 +15,7 @@ namespace RE
 		ScaleModeType a_scaleMode,
 		float         a_backgroundAlpha)
 	{
-		if (REL::Relocation<SettingT<INISettingCollection>*> fileUncacheOnMenuOpen{ REL::ID(454316) };
+		if (REL::Relocation<SettingT<INISettingCollection>*> fileUncacheOnMenuOpen{ REL::RelocationID(454316, 2667999) };
 			fileUncacheOnMenuOpen->GetBinary()) {
 			BSSystemFileStreamer::UncacheAll(true);
 		}
