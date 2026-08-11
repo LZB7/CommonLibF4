@@ -73,6 +73,9 @@ namespace RE
 		// members
 		TESCamera*                               camera;  // 18
 		REX::EnumSet<CameraState, std::uint32_t> id;      // 20
+		// 1.11.221 FreeCameraState::Begin sets this byte, End clears it,
+		// and Update returns immediately when it is false.
+		bool stateActive;  // 24
 	};
 	static_assert(sizeof(TESCameraState) == 0x28);
 
