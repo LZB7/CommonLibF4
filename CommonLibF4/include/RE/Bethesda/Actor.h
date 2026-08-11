@@ -1075,7 +1075,10 @@ namespace RE
 		ActorHandle GetActorHandle()
 		{
 			using func_t = decltype(&Actor::GetActorHandle);
-			static REL::Relocation<func_t> func{ REL::ID(1145222) };
+			// Actor::GetActorHandle: 1.10.163 / 1.11.221. The former
+			// OG-only declaration became reachable when package interception was
+			// restored; 2229894 is the exact supplied-AE-database mapping.
+			static REL::Relocation<func_t> func{ REL::RelocationID(1145222, 2229894) };
 			return func(this);
 		}
 
