@@ -125,7 +125,8 @@ namespace RE
 						data.rawType += RawType::kArrayStart;
 					} else {
 						assert(IsArray());
-						data.rawType -= RawType::kArrayEnd;
+						// Primitive arrays are encoded as element RawType + 0xA.
+						data.rawType -= RawType::kArrayStart;
 					}
 				}
 			}
