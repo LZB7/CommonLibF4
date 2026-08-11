@@ -494,7 +494,9 @@ namespace RE
 
 		[[nodiscard]] static GameVM* GetSingleton()
 		{
-			static REL::Relocation<GameVM**> singleton{ REL::RelocationID(996227, 2689134) };
+			// 2689134 is the 1.10.984 record.  The supplied 1.11.221
+			// Address Library maps g_GameVM (PDB RVA 0x30E0288) as 4796420.
+			static REL::Relocation<GameVM**> singleton{ REL::RelocationID(996227, 4796420) };
 			return *singleton;
 		}
 
