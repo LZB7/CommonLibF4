@@ -192,7 +192,10 @@ namespace RE
 
 		[[nodiscard]] static PlayerCamera* GetSingleton()
 		{
-			static REL::Relocation<PlayerCamera**> singleton{ REL::RelocationID(1171980, 2688801) };
+			// 2688801 is the 1.10.984 record.  The supplied 1.11.221
+			// Address Library maps PDB global g_PlayerCamera (RVA 0x30DBDD8)
+			// as 4796065.
+			static REL::Relocation<PlayerCamera**> singleton{ REL::RelocationID(1171980, 4796065) };
 			return *singleton;
 		}
 
