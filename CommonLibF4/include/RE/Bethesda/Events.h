@@ -746,7 +746,7 @@ namespace RE
 		[[nodiscard]] static BSTEventSource<TESHitEvent>* GetEventSource()
 		{
 			using func_t = decltype(&TESHitEvent::GetEventSource);
-			static REL::Relocation<func_t> func{ REL::RelocationID(989868, 1411899) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(989868, 2201886) };
 			return func();
 		}
 

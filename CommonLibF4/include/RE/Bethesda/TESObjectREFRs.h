@@ -881,7 +881,7 @@ namespace RE
 		void SetAngleOnReference(const NiPoint3& a_point)
 		{
 			using func_t = decltype(&TESObjectREFR::SetAngleOnReference);
-			static REL::Relocation<func_t> func{ REL::ID(1049748) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(1049748, 2201134) };
 			return func(this, a_point);
 		}
 
@@ -937,7 +937,7 @@ namespace RE
 		void SetScale(float scale)
 		{
 			using func_t = decltype(&TESObjectREFR::SetScale);
-			static REL::Relocation<func_t> func{ REL::ID(817930) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(817930, 2200893) };
 			return func(this, scale);
 		}
 

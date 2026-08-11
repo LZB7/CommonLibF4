@@ -725,8 +725,10 @@ namespace RE
 				BSTHashMap<std::uint32_t, TESForm*>*,
 				std::reference_wrapper<BSReadWriteLock>>
 		{
-			static REL::Relocation<BSTHashMap<std::uint32_t, TESForm*>**> allForms{ REL::RelocationID(422985, 2689178) };
-			static REL::Relocation<BSReadWriteLock*>                      allFormsMapLock{ REL::RelocationID(691815, 2689189) };
+			// The former second IDs are 1.10.984-only.  These exact AE IDs
+			// resolve to the 1.11.221 form map and its lock, respectively.
+			static REL::Relocation<BSTHashMap<std::uint32_t, TESForm*>**> allForms{ REL::RelocationID(422985, 4796465) };
+			static REL::Relocation<BSReadWriteLock*>                      allFormsMapLock{ REL::RelocationID(691815, 4796476) };
 			return { *allForms, *allFormsMapLock };
 		}
 
@@ -735,8 +737,8 @@ namespace RE
 				BSTHashMap<BSFixedString, TESForm*>*,
 				std::reference_wrapper<BSReadWriteLock>>
 		{
-			static REL::Relocation<BSTHashMap<BSFixedString, TESForm*>**> allFormsByEditorID{ REL::RelocationID(642758, 2689179) };
-			static REL::Relocation<BSReadWriteLock*>                      allFormsEditorIDMapLock{ REL::RelocationID(910917, 2689190) };
+			static REL::Relocation<BSTHashMap<BSFixedString, TESForm*>**> allFormsByEditorID{ REL::RelocationID(642758, 4796466) };
+			static REL::Relocation<BSReadWriteLock*>                      allFormsEditorIDMapLock{ REL::RelocationID(910917, 4796477) };
 			return { *allFormsByEditorID, *allFormsEditorIDMapLock };
 		}
 
