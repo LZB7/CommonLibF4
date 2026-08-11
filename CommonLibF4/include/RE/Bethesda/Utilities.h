@@ -88,14 +88,14 @@ namespace RE
 		inline bool InitializeActorInstant(Actor& a_actor, bool a_update3D)
 		{
 			using func_t = decltype(&InitializeActorInstant);
-			static REL::Relocation<func_t> func{ REL::ID(672857) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(672857, 2236393) };
 			return func(a_actor, a_update3D);
 		}
 
 		inline bool IsActiveGraphInTransition(const TESObjectREFR* a_refr)
 		{
 			using func_t = decltype(&IsActiveGraphInTransition);
-			static REL::Relocation<func_t> func{ REL::ID(839650) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(839650, 2214305) };
 			return func(a_refr);
 		}
 	};
