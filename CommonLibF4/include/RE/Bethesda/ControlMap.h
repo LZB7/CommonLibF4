@@ -62,7 +62,7 @@ namespace RE
 
 		[[nodiscard]] static ControlMap* GetSingleton()
 		{
-			static REL::Relocation<ControlMap**> singleton{ REL::RelocationID(325206, 2692014) };
+			static REL::Relocation<ControlMap**> singleton{ REL::RelocationID(325206, 4799307) };
 			return *singleton;
 		}
 
@@ -115,7 +115,7 @@ namespace RE
 		void SetTextEntryMode(bool a_enable)
 		{
 			using func_t = decltype(&ControlMap::SetTextEntryMode);
-			static REL::Relocation<func_t> func{ REL::RelocationID(1270079, 0) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(1270079, 4491359) };
 			return func(this, a_enable);
 		}
 

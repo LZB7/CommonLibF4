@@ -94,7 +94,9 @@ namespace RE
 
 		[[nodiscard]] static TESDataHandler* GetSingleton(bool a_VRESL = true)
 		{
-			static REL::Relocation<TESDataHandler**> singleton{ REL::RelocationID(711558, 2688883) };
+			// 1.11.221: g_TESDataHandler, RVA 0x30DC080.  The former second
+			// ID (2688883) belongs to 1.10.984, not the AE address namespace.
+			static REL::Relocation<TESDataHandler**> singleton{ REL::RelocationID(711558, 4796135) };
 			if (REL::Module::IsVR() && a_VRESL && !VRcompiledFileCollection) {
 				const auto VRhandle = REX::W32::GetModuleHandleW(L"falloutvresl");
 				if (VRhandle != NULL) {

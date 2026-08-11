@@ -888,7 +888,7 @@ namespace RE
 		void SetLinkedRef(const TESObjectREFR* a_refr, BGSKeyword* a_keyword)
 		{
 			using func_t = decltype(&TESObjectREFR::SetLinkedRef);
-			static REL::Relocation<func_t> func{ REL::ID(192840) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(192840, 2202684) };
 			return func(this, a_refr, a_keyword);
 		}
 
