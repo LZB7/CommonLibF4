@@ -828,13 +828,13 @@ namespace RE
 
 		[[nodiscard]] static decltype(auto) GetPickRef()
 		{
-			static REL::Relocation<ObjectRefHandle*> ref{ REL::ID(170742) };
+			static REL::Relocation<ObjectRefHandle*> ref{ REL::RelocationID(170742, 2701395) };
 			return *ref;
 		}
 
 		[[nodiscard]] static decltype(auto) GetPickRefs()
 		{
-			static REL::Relocation<BSTArray<ObjectRefHandle>*> pickRefs{ REL::ID(875116) };
+			static REL::Relocation<BSTArray<ObjectRefHandle>*> pickRefs{ REL::RelocationID(875116, 2701391) };
 			return *pickRefs;
 		}
 
