@@ -717,7 +717,7 @@ namespace RE
 			bool             a_interfaceEffect = false)
 		{
 			using func_t = decltype(&TESObjectREFR::ApplyEffectShader);
-			static REL::Relocation<func_t> func{ REL::ID(652173) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(652173, 2205201) };
 			return func(this, a_art, a_time, a_facingRef, a_attachToCamera, a_inheritRotation, a_3D, a_interfaceEffect);
 		}
 
