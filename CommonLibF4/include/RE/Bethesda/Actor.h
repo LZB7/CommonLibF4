@@ -1404,7 +1404,9 @@ namespace RE
 	public:
 		[[nodiscard]] static ActorEquipManager* GetSingleton()
 		{
-			static REL::Relocation<ActorEquipManager**> singleton{ REL::RelocationID(1174340, 2690994) };
+			// 2690994 is the 1.10.984 record. The supplied 1.11.221
+			// database maps g_actorEquipManager at RVA 0x31E33A8 as 4798287.
+			static REL::Relocation<ActorEquipManager**> singleton{ REL::RelocationID(1174340, 4798287) };
 			return *singleton;
 		}
 

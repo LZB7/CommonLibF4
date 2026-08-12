@@ -675,7 +675,7 @@ namespace RE
 		void AddInventoryItem(TESBoundObject* a_object, BSTSmartPointer<ExtraDataList> a_extra, std::uint32_t a_count, TESObjectREFR* a_oldContainer, const INSTANCE_FILTER* a_filter, TESObjectREFR* a_overrideRef)
 		{
 			using func_t = decltype(&TESObjectREFR::AddInventoryItem);
-			static REL::Relocation<func_t> func{ REL::ID(78185) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(78185, 2200949) };
 			return func(this, a_object, a_extra, a_count, a_oldContainer, a_filter, a_overrideRef);
 		}
 
@@ -797,7 +797,7 @@ namespace RE
 		[[nodiscard]] std::uint32_t GetInventoryObjectCount(const TESBoundObject* a_object)
 		{
 			using func_t = decltype(&TESObjectREFR::GetInventoryObjectCount);
-			static REL::Relocation<func_t> func{ REL::ID(333415) };
+			static REL::Relocation<func_t> func{ REL::RelocationID(333415, 2200939) };
 			return func(this, a_object);
 		}
 
