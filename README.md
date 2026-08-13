@@ -1,6 +1,6 @@
-# CommonLibF4 NG
+# CommonLibF4 AE
 
-This is a commonlibng version of CommonLibF4. NG comes from Skyrim Commonlib so multiple versions can use the same dll file (vs game specific dlls). This is currently for building flat (pre-ng and ng) and VR builds. Please note NG support is early stages. In fact, no F4/NG/VR specific structs/functions exist yet and need to be added.
+This is a CommonLibAE version of Deweh's CommonLibF4 test build.
 
 ## General Requirements
 
